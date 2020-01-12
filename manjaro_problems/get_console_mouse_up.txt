@@ -1,0 +1,5 @@
+sudo pacman -S gpm
+sudo systemctl status gpm
+sudo systemctl enable gpm
+sudo systemctl start gpm
+sudo systemctl status gpm

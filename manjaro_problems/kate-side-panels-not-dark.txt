@@ -1,0 +1,2 @@
+Add 'kate --style gtk2' to starter script.
+

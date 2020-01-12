@@ -1,0 +1,8 @@
+List
+-----
+sudo mhwd -l -d --pci
+
+Install
+--------
+sudo mhwd -i pci -f video-catalyst
+sudo mhwd -i pci -f video-ati

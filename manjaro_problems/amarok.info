@@ -1,0 +1,5 @@
+Install with 
+>$ pacman -s amarok
+Version 2.9 will have an empty middle plane , wich can be populated by cicking in the lower bar on the wrench. There you can manage the displayed content.
+Remove phonon-qt4 kdebase.
+

@@ -1,0 +1,8 @@
+# Error
+>$ psbook 'foo.ps' 'bar.psbook'
+Can't locate PSUtils.pm in @INC (you may need to install the PSUtils module) (@INC contains: /usr/lib/perl5/5.30/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.30/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.30/core_perl /usr/share/perl5/core_perl) at /usr/bin/pstops line 21.
+BEGIN failed--compilation aborted at /usr/bin/pstops line 21.
+
+# Solution
+sudo ln -s /usr/share/perl/PSUtils.pm /usr/share/perl5/vendor_perl/
+

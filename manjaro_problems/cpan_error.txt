@@ -1,0 +1,6 @@
+Starten mit
+   >$ env PERL5LIB= PERL_LOCAL_LIB_ROOT= cpan
+
+Hinzufügen zu ~/.extend.bashrc
+  alias cpanM='env PERL5LIB= PERL_LOCAL_LIB_ROOT= cpan'
+

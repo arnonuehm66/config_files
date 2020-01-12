@@ -1,0 +1,6 @@
+Hi,
+I don't know how much this helps, but I'm having the same problem on Void Linux with dosbox and xorg-server 1.20, and setting
+
+    autolock=false
+
+in ~/.dosbox/dosbox-0.74.conf circumvents the problem for me.

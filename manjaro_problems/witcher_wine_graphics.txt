@@ -1,0 +1,11 @@
+I just found the solution to the graphics glitch, quite by accident. Titan quest has an issue with some flickering textures and a workaround for that. Guess what, the same thing fixes the flickering issue for The Witcher! 
+
+"HKEY_CURRENT_USER\Software\Wine\Direct3D", add the String 
+"CheckFloatConstants" with the value "enabled" 
+
+I also set the Video memory size to 2048. 
+
+Tested with WINE 1.9.18. Nothing more is needed for an (almost) perfect witcher experience. 
+
+
+The only remaining glitch is some blank black textures in Vizima. I guess those are supposed to be puddles. No idea why they do not show properly, it is a very minor issue.

@@ -1,0 +1,13 @@
+>$ gpg --recv-keys 2D7479A531451088
+>$ yaourt -S ausweisapp2
+
+# pcscd, pcsc-spy ?!?
+# cd ~/Downloads/progs/smartcardreader_scl010-011/
+# unzip Linux_Driver_Ver2.09.zip 
+# cd Linux\ Driver\ Ver2.09/
+# tar -xjf sclgeneric_2.09_linux_64bit.tar.gz 
+# tar -xzf sclgeneric_2.09_linux_64bit.tar.gz 
+# cd sclgeneric_2.09_linux_
+# cd sclgeneric_2.09_linux_64bit
+# sudo ./install.sh 
+# vim ReadmeFirst.txt 

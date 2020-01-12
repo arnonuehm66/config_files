@@ -1,0 +1,16 @@
+Ubuntu BUG-Tracker:
+https://bugs.launchpad.net/ubuntu/+source/googleearth-package/+bug/1160289
+----
+giuliano69 (giuliano-lotta) wrote on 2018-08-13:	#18
+Update
+Google eart 7.3 (pro and ec version) and ubuntu 16.04
+same problem exist
+
+Fixing is trivial, inserting
+export LANG=en_US
+in the original bash script
+/opt/google/earth/free/googleearth-(pro/ec)
+
+BR
+----
+

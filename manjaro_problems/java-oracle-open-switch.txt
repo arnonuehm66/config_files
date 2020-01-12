@@ -1,0 +1,14 @@
+# How to switch between installed versions of java.
+
+>$ sudo archlinux-java set java-8-jre/jre
+>$ archlinux-java status
+Available Java environments:
+  java-8-jre/jre
+  java-8-openjdk (default)
+
+>$ sudo archlinux-java set java-8-openjdk
+>$ archlinux-java status
+Available Java environments:
+  java-8-jre/jre
+  java-8-openjdk (default)
+

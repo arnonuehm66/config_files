@@ -1,0 +1,50 @@
+--------------------------------------------------------------------------------
+Problem starting the bluetooth service.
+--------------------------------------------------------------------------------
+
+[jens@jens-pc MediathekView]$ sudo systemctl restart bluetooth
+[jens@jens-pc MediathekView]$ sudo systemctl status bluetooth
+● bluetooth.service - Bluetooth service
+   Loaded: loaded (/usr/lib/systemd/system/bluetooth.service; enabled; vendor preset: disabled)
+   Active: inactive (dead)
+Condition: start condition failed at Wed 2018-12-19 18:09:08 CET; 1s ago
+           └─ ConditionPathIsDirectory=/sys/class/bluetooth was not met
+     Docs: man:bluetoothd(8)
+
+--------------------------------------------------------------------------------
+After modprobe everything works fine because the missing directory was created.
+--------------------------------------------------------------------------------
+
+[jens@jens-pc MediathekView]$ sudo modprobe -v bluetooth
+[sudo] Passwort für jens:
+Where did you learn to type?
+[sudo] Passwort für jens:
+insmod /lib/modules/4.19.8-2-MANJARO/kernel/crypto/ecdh_generic.ko.xz
+insmod /lib/modules/4.19.8-2-MANJARO/kernel/net/bluetooth/bluetooth.ko.xz
+[jens@jens-pc MediathekView]$ sudo systemctl status bluetooth
+● bluetooth.service - Bluetooth service
+   Loaded: loaded (/usr/lib/systemd/system/bluetooth.service; enabled; vendor preset: disabled)
+   Active: inactive (dead)
+Condition: start condition failed at Wed 2018-12-19 20:02:38 CET; 4h 9min ago
+           └─ ConditionPathIsDirectory=/sys/class/bluetooth was not met
+     Docs: man:bluetoothd(8)
+[jens@jens-pc MediathekView]$ sudo systemctl restart bluetooth
+[jens@jens-pc MediathekView]$ sudo systemctl status bluetooth
+● bluetooth.service - Bluetooth service
+   Loaded: loaded (/usr/lib/systemd/system/bluetooth.service; enabled; vendor preset: disabled)
+   Active: active (running) since Thu 2018-12-20 00:11:59 CET; 1s ago
+     Docs: man:bluetoothd(8)
+ Main PID: 25132 (bluetoothd)
+   Status: "Running"
+    Tasks: 1 (limit: 4665)
+   Memory: 1.0M
+   CGroup: /system.slice/bluetooth.service
+           └─25132 /usr/lib/bluetooth/bluetoothd
+
+Dez 20 00:11:58 jens-pc systemd[1]: Starting Bluetooth service...
+Dez 20 00:11:59 jens-pc bluetoothd[25132]: Bluetooth daemon 5.50
+Dez 20 00:11:59 jens-pc bluetoothd[25132]: Starting SDP server
+Dez 20 00:11:59 jens-pc systemd[1]: Started Bluetooth service.
+Dez 20 00:11:59 jens-pc bluetoothd[25132]: Bluetooth management interface 1.14 initialized
+[jens@jens-pc MediathekView]$  
+--------------------------------------------------------------------------------
