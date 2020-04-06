@@ -1,0 +1,20 @@
+Disable Secure Boot:
+---------------------
+
+ - Boot and hit F12 for one time boot menu.
+ - Select disable secure boot, confirm as often as you must.
+
+
+
+Enter BIOS:
+------------
+
+ - Disable Intel RAID, to see internal NVMe M2 module.
+ - Disable Thunderbolt security, for enabling TB16 dock support.
+
+
+Until further note:
+--------------------
+
+ - Do not use kernel5x because their i915 intel graphics support is bad!
+ - Install and use latest LTS kernel419.
