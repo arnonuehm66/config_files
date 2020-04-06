@@ -1,0 +1,2 @@
+# To solve problem with startup error 'too many files open, can't write to *.xml'
+rm /home/elstne01/.config/QtProject/qtcreator/helpcollection.qhc

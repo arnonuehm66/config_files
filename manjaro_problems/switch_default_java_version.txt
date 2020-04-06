@@ -1,0 +1,6 @@
+After use
+ >$ archlinux-java status
+to see which jdk has been installed in your system. then use
+ >$ sudo archlinux-java set java-XX-jdk
+to set jdk XX as the default jdk.
+

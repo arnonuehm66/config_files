@@ -1,0 +1,10 @@
+vim /etc/makepkg.conf
+----------------------
+
+Add
+  MAKEFLAGS="-j9"
+to use 8 plus 1 thread for gcc.
+
+Add
+  COMPRESSXZ=(xz -c -z - --threads=0)
+to use as many threads as possible for compression with xz.

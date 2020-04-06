@@ -1,0 +1,3 @@
+-> Einstellungen/Sitzung und Startverhalten/Automatisch gestartete Anwendungen/
+Enable -> GNOME-Schlüsselbunddienst: Sicherheitsdienst
+

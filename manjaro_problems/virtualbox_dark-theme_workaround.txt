@@ -1,0 +1,9 @@
+Starter bearbeiten und unter Reiter Ausführen den Befehl
+
+  VirtualBox %U
+
+in
+
+  VirtualBox --style Fusion %U
+
+abändern. Damit kann man wenigstens den Text wieder einwandfrei lesen.
