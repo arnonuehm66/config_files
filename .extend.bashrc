@@ -113,7 +113,7 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 
 
 #*******************************************************************************
-#* jue addemnum
+#* jue addennum
 
 # Disable CTRL-s & CTRL-q
 stty -ixon
@@ -122,25 +122,34 @@ stty -ixon
 export HISTCONTROL=ignoreboth:erasedups
 export HISTFILESIZE=10000
 
-# aliases
+# Aliases
 alias ll='ls -l'
 alias ip='ip -c'
 
-# exports
+# Exports
 export VISUAL=vim
 export EDITOR=vim
 
-# set PATH so it includes user's private bin if it exists
+# Creates coloured man pages.
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
+
+# Eet PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# Functions
+# Create a coloured tree displayed via less.
 function treeless() { tree -C $* | less -r ; }
 
 #alias cpanM='env PERL5LIB= PERL_LOCAL_LIB_ROOT= cpan'
 
-#* jue addemnum
+#* jue addennum
 #*******************************************************************************
 
 
