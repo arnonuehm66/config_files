@@ -53,7 +53,7 @@ echo "Network:"
 cmd trizen -S netdiscover wireshark vivaldi $NOC
 
 echo "Programming:"
-cmd trizen -S kate qtcreator cmake git ninja $NOC
+cmd trizen -S kate qtcreator cmake git ninja ddd $NOC
 
 echo "Security:"
 cmd trizen -S veracrypt $NOC
