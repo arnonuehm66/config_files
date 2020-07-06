@@ -125,6 +125,8 @@ export HISTFILESIZE=10000
 # Aliases
 alias ll='ls -l'
 alias ip='ip -c'
+alias thunar='setsid thunar 2>/dev/null 1>/dev/null'
+alias pcmanfm='setsid pcmanfm 2>/dev/null 1>/dev/null'
 
 # Exports
 export VISUAL=vim
