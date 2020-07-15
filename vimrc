@@ -17,8 +17,22 @@ runtime! archlinux.vim
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
-" Got from PCKGBUILD
-set smarttab expandtab shiftwidth=2 softtabstop=2 cindent
+" ******************************************************************************
+" *** JuE
 
-" Relative numbers
-set relativenumber number
+" Set indent environment
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set smarttab
+set autoindent
+set smartindent
+set cindent
+
+" Set relative numbers
+set number
+set relativenumber
+
+" *** JuE
+" ******************************************************************************
