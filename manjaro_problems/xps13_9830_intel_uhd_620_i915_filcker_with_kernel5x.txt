@@ -1,5 +1,5 @@
 # Prevent "GPU: Intel UHD Graphics 620" from flickering with i915.
-# DELL XPS 13 9830 with intel graphics and kernel5x.
+# DELL XPS 13 9380 with intel graphics and kernel5x.
 
 # Edit grub config
 >$ sudo vim /etc/default/grub
