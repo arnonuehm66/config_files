@@ -1,0 +1,13 @@
+# Prevent "GPU: Intel UHD Graphics 620" from flickering with i915.
+# DELL XPS 13 9830 with intel graphics and kernel5x.
+
+# Edit grub config
+>$ sudo vim /etc/default/grub
+
+# Add this to prevent some intel power-saving states.
+GRUB_CMDLINE_LINUX="i915.enable_psr=0"
+
+# Update grub's config
+>$ sudo update-grub
+
+# ... and reboot.
