@@ -149,6 +149,9 @@ fi
 # Create a coloured tree displayed via less.
 function treeless() { tree -C $* | less -r ; }
 
+# Run everything detached and clean from terminal.
+function run() { setsid $* 2>/dev/null 1>/dev/null ; }
+
 #alias cpanM='env PERL5LIB= PERL_LOCAL_LIB_ROOT= cpan'
 
 #* jue addennum
