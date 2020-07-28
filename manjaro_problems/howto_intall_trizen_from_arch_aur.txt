@@ -1,0 +1,5 @@
+# Get trizen's git and install the PKGBUILD.
+>$ git clone https://aur.archlinux.org/trizen.git && cd trizen && makepkg -si
+
+# .
+>$ git clone <url> && cd <folder> && makepkg -si
