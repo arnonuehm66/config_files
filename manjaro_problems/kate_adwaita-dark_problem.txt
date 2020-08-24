@@ -1,0 +1,6 @@
+# Kate, Kile, etc. starts with wrong theme if Adwaita Dark is set.
+# So, install the QT theme variant of Adwaita Dark and qt5ct.
+
+>$ trizen -S adwaita-qt qt5ct
+
+# Then run qt5ct and under appearence change style to "Adwaita Dark"
