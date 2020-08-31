@@ -120,6 +120,7 @@ stty -ixon
 
 # History settings
 export HISTCONTROL=ignoreboth:erasedups
+export HISTIGNORE=ls:ll
 export HISTFILESIZE=10000
 
 # Aliases
