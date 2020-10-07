@@ -1,0 +1,7 @@
+# From 'https://wiki.archlinux.de/title/Trizen'
+# ----------------------------------------------
+
+# execute
+>$ git clone https://aur.archlinux.org/trizen.git && cd trizen && makepkg -si
+# or
+>$ git clone https://aur.archlinux.org/trizen-git.git && cd trizen-git && makepkg -si
