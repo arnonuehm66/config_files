@@ -63,6 +63,7 @@ alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
+alias vp='vim -w PKGBUILD'
 alias more=less
 
 xhost +local:root > /dev/null 2>&1
@@ -150,8 +151,12 @@ fi
 # Create a coloured tree displayed via less.
 function treeless() { tree -C $* | less -r ; }
 
+# Get count of running ranger processes.
+function r() { echo `ps aux | grep "[r]anger" | wc -l` ranger running ; }
+
 # Run everything detached and clean from terminal.
-function x() { setsid $* 2>/dev/null 1>/dev/null ; }
+#function x() { setsid $* 2>/dev/null 1>/dev/null ; }
+function x() { setsid $1 "$2" 2>/dev/null 1>/dev/null ; }
 
 #alias cpanM='env PERL5LIB= PERL_LOCAL_LIB_ROOT= cpan'
 
