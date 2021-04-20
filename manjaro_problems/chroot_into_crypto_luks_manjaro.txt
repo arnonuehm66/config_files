@@ -1,0 +1,31 @@
+# Start a Linux live CD on your laptop.
+#   ...
+# And then open a terminal.
+
+# Mount the root partition to /mnt.
+>$ lsblk -f
+...
+# Choose your crypto_luks device (here as example /dev/sda1).
+>$ sudo cryptsetup luksOpen /dev/sda1 myname
+# ... enter your password here ... ;o)
+>$ sudo mount /dev/mapper/myname /mnt
+
+# Redirect virtual filesystems /proc, /sys and /dev.
+>$ sudo mount -t proc /proc /mnt/proc
+>$ sudo mount --rbind /sys /mnt/sys
+>$ sudo mount --rbind /dev /mnt/device
+
+# To enable internet connectivity in chroot's environent.
+>$ mv /mnt/etc/resolv.conf /mnt/etc/resolv.conf.original
+>$ cp /etc/resolv.conf /mnt/etc/resolv.conf
+
+# Now its time to change root.
+>$ chroot /mnt /bin/bash
+
+# Do your thing.
+># ...
+
+# After usage.
+># exit
+
+# Leave live CD
