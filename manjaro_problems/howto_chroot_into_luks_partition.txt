@@ -1,0 +1,11 @@
+>$ cryptsetup luksOpen /dev/sdX1 <name>
+... enter password
+>$ mount /dev/mapper/<name> /mnt/<name>
+
+>$ mount -t proc /mnt/proc
+>$ mount --bind sys /mnt/sys
+>$ mount --bind dev /mnt/dev
+
+>$ chroot /mnt /bin/bash
+
+>$ <do what you need to>
