@@ -1,0 +1,23 @@
+# After installing markup editor remarkable on manjaro (up to date 03.09.2021),running it crashes with this error.
+>$ remarkable 
+/usr/lib/python3.9/site-packages/pdfkit/source.py:11: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if self.type is 'file':
+*Spellchecking not enabled.
+*To enable spellchecking install python-gtkspellcheck.
+pacman -S --asdeps python-gtkspellcheck
+Traceback (most recent call last):
+  File "/usr/bin/remarkable", line 66, in <module>
+    remarkable.main()
+  File "/usr/lib/python3.9/site-packages/remarkable/__init__.py", line 49, in main
+    window = RemarkableWindow.RemarkableWindow()
+  File "/usr/lib/python3.9/site-packages/remarkable_lib/Window.py", line 52, in __new__
+    builder = get_builder('RemarkableWindow')
+  File "/usr/lib/python3.9/site-packages/remarkable_lib/helpers.py", line 48, in get_builder
+    builder.add_from_file(ui_filename)
+  File "/usr/lib/python3.9/site-packages/remarkable_lib/Builder.py", line 92, in add_from_file
+    ele_widgets = tree.getiterator("object")
+AttributeError: 'ElementTree' object has no attribute 'getiterator'
+
+# It's a Python 3.9 bug!
+# To solve this problem change every occurrences of 'getiterator'to 'iter', then it will work again.
+>$ sudo perl -i -lape 's/getiterator/iter/g' /usr/lib/python3.9/site-packages/remarkable_lib/Builder.py
