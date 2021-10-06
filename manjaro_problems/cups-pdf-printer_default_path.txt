@@ -1,0 +1,5 @@
+# Either edit '/etc/cups/cups-pdf.conf' so that your generated pdfs will be saved in a known path (e.g. '~/PDF')
+# or use the default path, which is '/var/spool/cups-pdf/my_user_name'.
+# Or link the two paths together like this^:
+>$ ln -s /var/spool/cups-pdf/my_user_name ~/PDF/cups-pdf 
+
