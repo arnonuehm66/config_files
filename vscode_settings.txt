@@ -1,0 +1,19 @@
+# ctrl + , -> settings
+
+# auto close -> never
+ - brackets
+ - quotes
+
+# trim
+ - check trim trailing whitespace when saving
+
+# ruler
+ - set ruler at column 80
+   in settings.json add ("editor.rulers": [80])
+
+# File/Preference/Keyboard Shortcuts ...
+ - Add:
+   Go Back ->   Alt+ LeftArrow
+   Go Foward -> Alt+ RightArrow
+
+
