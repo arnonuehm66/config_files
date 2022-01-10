@@ -1,0 +1,2 @@
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": ["${fileDirname}/testinput.txt"],
