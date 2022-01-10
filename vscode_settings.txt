@@ -11,6 +11,9 @@
  - set ruler at column 80
    in settings.json add ("editor.rulers": [80])
 
+# font
+ - add 'Noto Sans Mono' to Font Family
+
 # File/Preference/Keyboard Shortcuts ...
  - Add:
    Go Back ->   Alt+ LeftArrow
