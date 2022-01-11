@@ -1,4 +1,5 @@
 # ctrl + , -> settings
+# ---------------------
 
 # auto close -> never
  - brackets
@@ -18,6 +19,7 @@
  - change Tb Size to 2
 
 # File/Preference/Keyboard Shortcuts ...
+# ----------------------------------------
  - Add:
    Go Back ->   Alt+ LeftArrow
    Go Foward -> Alt+ RightArrow
