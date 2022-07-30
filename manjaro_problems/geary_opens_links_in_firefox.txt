@@ -4,7 +4,6 @@
 >$ xdg-mime query default x-scheme-handler/http
 >$ xdg-mime query default x-scheme-handler/https
 
-# If not set to vivaldi-stable.desktop:
-
+# If it shows still firefox.desktop set to vivaldi-stable.desktop with
 >$ xdg-mime default vivaldi-stable.desktop x-scheme-handler/http
 >$ xdg-mime default vivaldi-stable.desktop x-scheme-handler/https
