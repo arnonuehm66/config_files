@@ -1,0 +1,10 @@
+# Geary opens links in firefox nevertheless vivaldi is set as default in xfce4.
+# After looking in xfce4-mime-settings, no problem can be found.
+# So check the association via cli:
+>$ xdg-mime query default x-scheme-handler/http
+>$ xdg-mime query default x-scheme-handler/https
+
+# If not set to vivaldi-stable.desktop:
+
+>$ xdg-mime default vivaldi-stable.desktop x-scheme-handler/http
+>$ xdg-mime default vivaldi-stable.desktop x-scheme-handler/https
