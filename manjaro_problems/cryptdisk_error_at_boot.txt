@@ -1,0 +1,6 @@
+# If you get the boot message: "no such crypto disk found",
+# you must update the grup installation.
+>$ grub-install
+>$ grub-mkconfig -o /boot/grub/grub.cfg
+# That's it. ;o)
+
