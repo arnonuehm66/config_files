@@ -1,0 +1,6 @@
+# Get the UUID from existing LUKS device.
+  >$ lsblk -f
+
+# Locate missing (swap) UUID and comment it out or delete the line.
+  >$ sudo vim /etc/crypttab
+
