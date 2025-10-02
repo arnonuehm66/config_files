@@ -121,7 +121,7 @@ stty -ixon
 
 # History settings
 export HISTCONTROL=ignoreboth:erasedups
-export HISTIGNORE=ls:ll
+export HISTIGNORE=ls:ll:l:lll:exit
 export HISTFILESIZE=10000
 
 # Aliases
@@ -129,6 +129,7 @@ alias ll='ls -l'
 alias ip='ip -c'
 alias thunar='setsid thunar 2>/dev/null 1>/dev/null'
 alias pcmanfm='setsid pcmanfm 2>/dev/null 1>/dev/null'
+alias cfetch='clear;fastfetch'
 
 # Exports
 export VISUAL=vim
@@ -150,13 +151,19 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 function treeless() { tree -C $* | less -r ; }
 
 # Get count of running ranger processes.
-function r() { echo `ps aux | grep "[r]anger" | wc -l` ranger running ; }
+# function r() { echo `ps aux | grep "[r]anger" | wc -l` ranger running ; }
+alias r="$HOME/bin_my/getRangerBash.pl"
 
 # Run everything detached and clean from terminal.
 #function x() { setsid $* 2>/dev/null 1>/dev/null ; }
 function x() { setsid $1 "$2" 2>/dev/null 1>/dev/null ; }
 
+function wttr() { curl -H 'accept-language:de' wttr.in/$1 ; }
+
 #alias cpanM='env PERL5LIB= PERL_LOCAL_LIB_ROOT= cpan'
+
+export SAL_USE_VCLPLUGIN=qt6
+alias impress='setsid env SAL_USE_VCLPLUGIN=qt6 libreoffice --impress'
 
 #* jue addennum
 #*******************************************************************************
@@ -174,4 +181,3 @@ function x() { setsid $1 "$2" 2>/dev/null 1>/dev/null ; }
 #* cpan environment
 #*******************************************************************************
 
-neofetch
