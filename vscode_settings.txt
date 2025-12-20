@@ -18,6 +18,9 @@
 # tab
  - change Tb Size to 2
 
+# inlayHints
+ - change to "off" or only with key-press
+
 # File/Preference/Keyboard Shortcuts ...
 # ----------------------------------------
  - Add:
