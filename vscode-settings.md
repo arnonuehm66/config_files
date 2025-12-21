@@ -11,7 +11,7 @@ Open `Settings` with `CTRL + ,`.
 
 * Enable `Trim Trailing Whitespaces` (when saving).
 
-* Set ruler at column 80`Editor: Rulers`. Click `Edit in settings.json` and add ("editor.rulers": [80]).
+* Set ruler at column 80`Editor: Rulers`. Click `Edit in settings.json` and add `"editor.rulers": [80]`.
 
 * Add `Noto Sans Mono` to `Font Family`.
 
