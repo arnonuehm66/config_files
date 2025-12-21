@@ -24,6 +24,6 @@ Open `Settings` with `CTRL + ,`.
 Go to `File/Preference/Keyboard Shortcuts ...`
 
 * Add:
-  - Go Back ->   Alt+ LeftArrow
-  - Go Foward -> Alt+ RightArrow
+  - `Go Back Editor Location` ->   Alt+ LeftArrow
+  - `Go Foward Editor Location` -> Alt+ RightArrow
 
