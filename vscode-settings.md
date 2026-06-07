@@ -2,7 +2,7 @@
 
 ## Settings
 
-Open `Settings` with `CTRL + ,`.
+Open `Settings` with `CTRL + ,`:
 
 * Set to `never`: `Auto Closing` ...
   - ... `Brackets`
@@ -19,16 +19,16 @@ Open `Settings` with `CTRL + ,`.
 
 * Change `inlayHints` to `off` or key-press only.
 
-* Search for `workbench font`
+* Search for `workbench font`:
   - Set all `Font Family` to `arial`.
 
-* Search for `workbench theme`
+* Search for `workbench theme`:
   - Set `Color Theme` to `Dark (Visual Studio)`.
 
 ## Keyboard Shortcuts
 
-Go to `File/Preference/Keyboard Shortcuts ...`
+Go to `File/Preference/Keyboard Shortcuts ...`:
 
 * Add:
-  - Go Back   -> Alt+ LeftArrow
+  - Go Back -> Alt+ LeftArrow
   - Go Foward -> Alt+ RightArrow
