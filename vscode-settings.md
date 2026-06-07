@@ -22,7 +22,7 @@ Open `Settings` with `CTRL + ,`.
 * Search for `workbench font`
   - Set all `Font Family` to `arial`.
 
-* Search for `workbench font` and `workbench theme`
+* Search for `workbench theme`
   - Set `Color Theme` to `Dark (Visual Studio)`.
 
 ## Keyboard Shortcuts
